@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dispose Waste Like a pro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+</head>
+<body background="waste2.jpeg">
+    <center>
+        <h1 id = "a" class = "btn btn-info">Dispose Waste Like a pro!!</h1>
+        <div id = "b">
+            <h3>Waste is a massive problem. World Bank estimates show that, globally, we produce approximately 2.01 billion tonnes of solid waste each year. However, at least 33% of that waste is not managed in an environmentally sound manner — and that’s an extremely conservative estimate. </h3>
+            <h3 style = "color: purple"> The importance of waste segregation is something that we can no longer afford to ignore.</h3>
+            <h3>There are broadly 4 categories of waste. E-waste, Plastics, Paper and Biodegradable Waste. One must know how to segregate efficiently for proper waste management.</h3>
+        <img id="z" src = "Screenshot 2023-05-20 at 1.14.53 AM.png" >
+        <h2>Simple! Capture a image of the waste and quickly find out which bin it belongs to!</h2>
+        <hr>
+    </div>
+
+        <h2 id = "a" class = "btn btn-info" >Camera</h2>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="take_snapshot();" id = "c" class= "btn btn-warning">Take Picture</button>
+        <br><br>
+        <button onclick="check();" id = "c" class= "btn btn-warning">Identify</button>
+        <br><br>
+<span>
+        <h3>Classification: <span id= "result_object_name"></span></h3>
+        <h3>Accuracy: <span id= "result_object_accuracy"></span></h3>
+</span>
+    </center>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
